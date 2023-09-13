@@ -59,12 +59,11 @@ function fetchCurrencyData() {
   // Устанавливаем обработчик события onerror, который сработает при ошибке запроса
   xhr.onerror = function() {
     console.error('Ошибка при выполнении запроса.');
-    // Обрабатываем ошибку, например, отображаем сообщение об ошибке
   };
 
   // Отправляем запрос
   xhr.send();
 }
 
-// Вызываем функцию fetchCurrencyData для загрузки данных о курсах валют
+// Вызываем функцию fetchCurrencyData
 fetchCurrencyData();
